@@ -215,6 +215,8 @@ class Main extends PluginBase implements Listener,CommandExecutor {
 			"{30SPACE}" => str_repeat(" ",30),
 			"{40SPACE}" => str_repeat(" ",40),
 			"{50SPACE}" => str_repeat(" ",50),
+                        "{PLAYERS}" => count($this->getServer()->geMAXPLAYERSyers()),
+                        "{MAXPLAYERS}" => $this->getServer()->getMaxPlayers(),
 			"{NL}" => "\n",
 			"{BLACK}" => TextFormat::BLACK,
 			"{DARK_BLUE}" => TextFormat::DARK_BLUE,
